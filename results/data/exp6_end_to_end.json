@@ -1,0 +1,30 @@
+{
+  "motion_estimation": {
+    "obs_true_V": 0.6,
+    "obs_est_V": 0.5448365043423423,
+    "obs_true_zeta": 0.12,
+    "obs_est_zeta": 0.06361964049962901,
+    "obs_est_zeta_std": 0.09968224507691203
+  },
+  "max_abs_err_probstar_vs_mc": 7.3388737681368e-06,
+  "peak_prob_reference": 0.9999966408575943,
+  "peak_prob_across_noise_realizations": {
+    "mean": 0.9961801100977515,
+    "std": 0.005702781403622019,
+    "min": 0.984827384384173,
+    "max": 0.9999999492501945,
+    "values": [
+      0.9853558257283159,
+      0.9977342296123858,
+      0.9996687043173722,
+      0.9991569955502712,
+      0.984827384384173,
+      0.9995717147484015,
+      0.9999999492501945,
+      0.9954905576484392,
+      0.9999994296157265,
+      0.9999963101222357
+    ]
+  },
+  "note": "Full pipeline: simulated pose detection -> Figure-4 motion estimation -> Taylor uncertainty propagation -> ProbStar reachability -> verification, validated against Monte Carlo."
+}

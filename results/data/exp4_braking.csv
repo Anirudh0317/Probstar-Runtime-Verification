@@ -1,0 +1,6 @@
+action,decel_mps2,stops_at_step,peak_collision_prob,union_lower,max_abs_err_vs_mc
+decel_0.0_mps2,0.0,-1,0.9996,0.9996,0.0007
+decel_1.5_mps2,1.5,4,0.9996,0.9996,0.0007
+decel_2.0_mps2,2.0,3,0.9606,0.9606,0.0006
+decel_3.0_mps2,3.0,2,0.3295,0.3295,0.001
+decel_4.0_mps2,4.0,2,0.1197,0.1197,0.0004

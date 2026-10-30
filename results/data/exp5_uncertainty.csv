@@ -1,0 +1,5 @@
+sigma_pos_m,peak_prob,first_nonzero_step,max_abs_err_vs_mc
+0.02,1.0,6,0.0011
+0.05,1.0,5,0.0013
+0.1,0.9638,4,0.0014
+0.2,0.6729,2,0.0044

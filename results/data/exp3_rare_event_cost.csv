@@ -1,0 +1,7 @@
+true_prob,mc_samples_needed_10pct,mc_time_s_est,probstar_time_s,probstar_faster
+0.5,384,0.0001,0.205199,False
+0.1,3457,0.0008,0.205199,False
+0.01,38031,0.0085,0.205199,False
+0.001,383775,0.086,0.205199,False
+0.0001,3841215,0.8603,0.205199,True
+1e-06,384159615,86.041,0.205199,True

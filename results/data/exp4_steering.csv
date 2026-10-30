@@ -1,0 +1,6 @@
+action,steering_rad,peak_collision_prob,union_lower
+steer_0.00rad,0.0,0.9996,0.9996
+steer_0.10rad,0.1,0.9856,0.9856
+steer_0.20rad,0.2,0.7991,0.7991
+steer_0.30rad,0.3,0.354,0.354
+steer_0.45rad,0.45,0.0299,0.0299
