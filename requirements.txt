@@ -1,0 +1,22 @@
+# Core numerical / scientific stack
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.6
+PyYAML>=6.0
+
+# Testing
+pytest>=7.0
+
+# Notes:
+# - This project deliberately depends ONLY on the standard scientific Python
+#   stack. It does NOT depend on the official StarV/ProbStar toolkit, gurobipy,
+#   pycddlib, polytope, pypoman, onnx, or torchvision.
+# - Reasons (see README "ProbStar: official toolkit vs. this implementation"):
+#     * StarV is not on PyPI and pins numpy<=1.26.4 / scipy<1.13.1, which
+#       conflicts with modern environments.
+#     * Its probability routine calls scipy.stats.mvn.mvnun, which was REMOVED
+#       in SciPy >= 1.13, so even the reference probability code no longer runs
+#       on a current SciPy.
+#     * Its LP backend defaults to gurobipy (a commercial, license-gated solver).
+# - We therefore provide a faithful, self-contained reimplementation of the
+#   ProbStar mathematics and document every deviation from the official method.

@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "k_max": 5,
+      "init_state_ms": 0.117,
+      "reach_plus_prob_ms_total": 959.477,
+      "reach_plus_prob_ms_per_step": 191.895
+    },
+    {
+      "k_max": 10,
+      "init_state_ms": 0.711,
+      "reach_plus_prob_ms_total": 1934.036,
+      "reach_plus_prob_ms_per_step": 193.404
+    },
+    {
+      "k_max": 20,
+      "init_state_ms": 0.112,
+      "reach_plus_prob_ms_total": 3851.851,
+      "reach_plus_prob_ms_per_step": 192.593
+    },
+    {
+      "k_max": 100,
+      "init_state_ms": 0.111,
+      "reach_plus_prob_ms_total": 19591.239,
+      "reach_plus_prob_ms_per_step": 195.912
+    }
+  ],
+  "note": "Only initial-state and probstar timings are measured; perception-DNN timings from Table 3 are not reproduced (real networks not run)."
+}

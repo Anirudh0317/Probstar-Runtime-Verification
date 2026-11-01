@@ -1,0 +1,40 @@
+# Config for the perception-based runtime verification project.
+#
+# SI units unless noted: metres, radians, m/s, seconds.
+# Values match the paper where it gives them; otherwise they are F1Tenth-scale
+# defaults (see per-value comments).
+# Paper: Brown et al., "Perception-based Quantitative Runtime Verification for
+# Learning-enabled Cyber-Physical Systems", ICCPS '25.
+
+seed: 12345                 # global RNG seed for reproducibility
+
+vehicle:
+  # F1Tenth is a 1/10-scale car. Wheelbase ~0.33 m is the standard F1Tenth value.
+  wheelbase_L: 0.33         # metres (kinematic bicycle "L")
+  # Bounding box half-extents (rectangle centred at vehicle centre), metres.
+  # F1Tenth footprint is ~0.55 m x 0.30 m -> half extents below.
+  length_half: 0.275        # half of car length (used for B_pi, B_omega)
+  width_half: 0.15          # half of car width
+
+reachability:
+  dt_r: 0.25                # reachability (probstar) time step  [paper S5.1: 0.25 s]
+  dt_m: 0.025               # modeling/linearization time step   [paper S5.1: 0.025 s]
+  k_max: 100                # max number of reachability steps    [paper S5.1: up to 100]
+  delta: 6.0                # predicate box truncation at +/- delta sigma (our choice; the
+                            # paper does not state a value, 6 sigma holds ~all the mass)
+
+probability:
+  # Backend for the truncated-MVN integral in ProbStar.estimate_probability().
+  # See probstar_rv/truncated_mvn.py.
+  #   "auto"  : scipy cdf for small dims, Genz SOV Monte Carlo otherwise
+  #   "genz"  : always Genz SOV Monte Carlo
+  #   "scipy" : always scipy.stats.multivariate_normal.cdf
+  mvn_backend: "auto"
+  genz_samples: 20000       # samples for the Genz SOV estimator
+  scipy_maxdim: 6           # use analytic cdf up to this many constrained dims
+
+monte_carlo:
+  # Paper Table 4 compares ProbStar against "Simulation (1000 Trials)", so the
+  # exp1 reproduction uses 1000 trials to match the paper. Experiments that use
+  # Monte Carlo only as an internal validator pass their own (larger) counts.
+  n_samples: 1000

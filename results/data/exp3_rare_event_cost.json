@@ -1,0 +1,50 @@
+{
+  "probstar_per_query_s": 0.20519917999999962,
+  "mc_per_sample_step_s": 2.2397210000008273e-07,
+  "target_relative_error": 0.1,
+  "rows": [
+    {
+      "true_prob": 0.5,
+      "mc_samples_needed_10pct": 384,
+      "mc_time_s_est": 0.0001,
+      "probstar_time_s": 0.205199,
+      "probstar_faster": false
+    },
+    {
+      "true_prob": 0.1,
+      "mc_samples_needed_10pct": 3457,
+      "mc_time_s_est": 0.0008,
+      "probstar_time_s": 0.205199,
+      "probstar_faster": false
+    },
+    {
+      "true_prob": 0.01,
+      "mc_samples_needed_10pct": 38031,
+      "mc_time_s_est": 0.0085,
+      "probstar_time_s": 0.205199,
+      "probstar_faster": false
+    },
+    {
+      "true_prob": 0.001,
+      "mc_samples_needed_10pct": 383775,
+      "mc_time_s_est": 0.086,
+      "probstar_time_s": 0.205199,
+      "probstar_faster": false
+    },
+    {
+      "true_prob": 0.0001,
+      "mc_samples_needed_10pct": 3841215,
+      "mc_time_s_est": 0.8603,
+      "probstar_time_s": 0.205199,
+      "probstar_faster": true
+    },
+    {
+      "true_prob": 1e-06,
+      "mc_samples_needed_10pct": 384159615,
+      "mc_time_s_est": 86.041,
+      "probstar_time_s": 0.205199,
+      "probstar_faster": true
+    }
+  ],
+  "note": "MC sample count for 10%% relative std error at 95%% confidence; ProbStar cost is independent of p. The crossover shows where ProbStar wins (rare events), consistent with the paper."
+}

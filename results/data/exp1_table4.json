@@ -1,0 +1,33 @@
+{
+  "mc_samples": 1000,
+  "trials": {
+    "trial1_rear_end": {
+      "scenario": "trial1_rear_end",
+      "true_prob_percent": 50.0,
+      "probstar_prob_percent": 49.992,
+      "montecarlo_prob_percent": 50.8,
+      "probstar_err_vs_true_pp": 0.008,
+      "montecarlo_err_vs_true_pp": 0.8,
+      "probstar_time_ms_total": 3102.55,
+      "montecarlo_time_ms_total": 4.25,
+      "speedup_mc_over_probstar": 0.0,
+      "probstar_time_ms_per_step": 193.91,
+      "montecarlo_time_ms_per_step": 0.265,
+      "mc_samples": 1000
+    },
+    "trial2_side": {
+      "scenario": "trial2_side",
+      "true_prob_percent": 2.28,
+      "probstar_prob_percent": 2.271,
+      "montecarlo_prob_percent": 2.0,
+      "probstar_err_vs_true_pp": 0.009,
+      "montecarlo_err_vs_true_pp": 0.28,
+      "probstar_time_ms_total": 1487.39,
+      "montecarlo_time_ms_total": 2.67,
+      "speedup_mc_over_probstar": 0.0,
+      "probstar_time_ms_per_step": 185.923,
+      "montecarlo_time_ms_per_step": 0.333,
+      "mc_samples": 1000
+    }
+  }
+}
